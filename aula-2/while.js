@@ -1,18 +1,17 @@
 let numeroCarro = 1;
-const lavarcarro = () =>{
+const lavarCarro = () => {
     console.log(`lavando carro ${numeroCarro}`);
-}    
-    //const verificarTemCarroNaFila: () => Boolean
+}
 
 const verificarTemCarroNaFila = () => {
-    return(
+    return (
         numeroCarro < 10
     );
 }
 
 let temCarroNaFila = true;
-while (temCarroNaFila){
-    lavarcarro();
+while (temCarroNaFila) {
+    lavarCarro();
     temCarroNaFila = verificarTemCarroNaFila();
     numeroCarro++;
 }
